@@ -47,11 +47,11 @@ fi
 
 if [[ "$1" == "url" ]]; then
 
-  echo "${releaseInfo}" | jq -r '.assets[] | .browser_download_url | select(test("PrusaSlicer-.+(-\\w)?.linux-x64-(?!GTK3).+.tar.bz2"))'
+  echo "${releaseInfo}" | jq -r '.assets[] | .browser_download_url | select(test("PrusaSlicer-.+(-\\w)?.linux-aarch64-(?!GTK3).+.tar.bz2"))'
 
 elif [[ "$1" == "name" ]]; then
 
-  echo "${releaseInfo}" | jq -r '.assets[] | .name | select(test("PrusaSlicer-.+(-\\w)?.linux-x64-(?!GTK3).+.tar.bz2"))'
+  echo "${releaseInfo}" | jq -r '.assets[] | .name | select(test("PrusaSlicer-.+(-\\w)?.linux-aarch64-(?!GTK3).+.tar.bz2"))'
 
 elif [[ "$1" == "url_ver" ]]; then
 
