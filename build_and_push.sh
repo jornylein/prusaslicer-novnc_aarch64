@@ -1,6 +1,6 @@
 #!/bin/bash
   
-image="mikeah/prusaslicer-novnc"  
+image="prusaslicer-novnc_aarch64"  
   
 # Set the timestamp
 timestamp=$(date +%Y.%m.%d.%H%M%S)  
@@ -12,9 +12,9 @@ latest=$image:latest
 docker build -t $tag -t $latest .  
   
 # Push with the timestamped tag, and latest image tag to Docker Hub.
-docker login
-docker push $tag
-docker push $latest
+#docker login
+#docker push $tag
+#docker push $latest
   
 # Cleanup
-docker system prune -f
+#docker system prune -f
