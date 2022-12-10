@@ -1,4 +1,4 @@
-# Prusaslicer noVNC Docker Container
+# Prusaslicer noVNC Docker Container for aarch64 hosts
 
 ## Overview
 
