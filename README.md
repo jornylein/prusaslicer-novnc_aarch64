@@ -22,5 +22,3 @@ This will bind `/configs/` in the container to a local volume on my machine name
 [GitHub Source](https://github.com/jornylein/prusaslicer-novnc_aarch64)
 
 [Original GitHub Source](https://github.com/helfrichmichael/prusaslicer-novnc)
-
-[Docker](https://hub.docker.com/r/mikeah/prusaslicer-novnc)
